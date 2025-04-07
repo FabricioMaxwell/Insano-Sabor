@@ -1,13 +1,19 @@
 <template>
   <section
-    className="h-full w-full bg-[#EC4E50] px-12 pb-9 flex flex-col items-center gap-3 z-40 relative overflow-hidden xl:flex-row xl:justify-between xl:p-0"
+    className="h-full w-full bg-[#EC4E50] px-12 pb-9 flex flex-col items-center gap-14 z-40 relative overflow-hidden xl:flex-row xl:justify-between xl:p-0 xl:gap-0"
   >
     <div
-      class="w-[300px] flex items-end justify-center rounded-b-[200px] bg-[#F1904C] xl:w-[700px] xl:rounded-b-none xl:rounded-tr-[500px] xl:items-end xl:h-full"
+      class="w-[300px] flex justify-center rounded-b-[200px] bg-[#F1904C] xl:w-[700px] xl:rounded-b-none xl:rounded-tr-[500px] xl:h-full xl:items-end relative"
     >
-      <img :src="logo" alt="logo" class="w-40 h-48 xl:w-[600px] xl:h-[auto]" />
+      <img
+        :src="logo"
+        alt="logo"
+        class="w-40 h-48 xl:w-[700px] xl:h-[auto] xl:absolute xl:-bottom-18"
+      />
     </div>
-    <div className=" text-black flex flex-col w-80 rounded-[45px] xl:w-[800px]">
+    <div
+      className=" text-black flex flex-col w-80 h-full rounded-[45px] xl:w-[900px] xl:justify-center"
+    >
       <slot />
     </div>
     <div class="absolute top-0 left-2 -z-10 rotate-6 xl:left-180">
